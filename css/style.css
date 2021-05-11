@@ -1,0 +1,124 @@
+:root {
+    --bluePale:hsl(243, 100%, 93%);
+    --blueGrayish:hsl(229, 7%, 55%);
+    --BlueDark:hsl(228, 56%, 26%);
+    --BlueDarker:hsl(229, 57%, 11%);
+    --font:'Raleway', sans-serif;
+    --primary:hsl(6, 100%, 80%),hsl(335, 100%, 65%);
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+html {
+    font-family: var(--font);
+}
+
+body {
+    background-image: url(../images/bg-mobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider__container {
+    width: 89%;
+}
+
+.slider__container > *{
+    background-color: var(--BlueDark);
+}
+
+.slider__top-container {
+    /* display: flex; */
+    padding: 3rem;
+    padding-right: 6rem;
+    border-radius: 10px;
+    border-top-right-radius: 100px;
+    /* width: 100%; */
+    /* height: 300px; */
+}
+
+.slider__logo {
+    height: 50px;
+    /* width: 100%; */
+    /* transform: scale(130%); */
+
+}
+
+.slider__top-icon-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.slider__top-icon-container > * {
+    background-color: var(--BlueDarker);
+    border-radius: 10px;
+    /* height: 40px;
+    width: 40px; */
+    padding: 1rem;
+    /* place-self: center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* gap: 2rem; */
+}
+
+.slider__top-icon-container img {
+    height: 30px;
+    width: 30px;
+}
+
+.slider__bottom-container {
+    margin-top: 1rem;
+    border-radius: 10px;
+    padding: 3rem;
+    text-align: center;
+    color: white;
+}
+
+.slider {
+    width: 100%;
+    /* background-image: linear-gradient(to right,var(--primary)); */
+    appearance: none;
+    border-radius: 10px;
+    cursor: ew-resize;
+    overflow: hidden;
+    height: 30px;
+    background-color: var(--BlueDarker);
+    padding: 1rem;
+}
+
+.slider > * {
+    /* padding: 1rem; */
+}
+
+.slider__bottom-label {
+    display: flex;
+    justify-content: space-between;
+}
+
+input[type="range"]::-moz-range-progress {
+    /* background-color: #43e5f7;  */
+    background-image: linear-gradient(to right,var(--primary));
+    height: 20px;
+    border-radius: 10px;
+  }
+  input[type="range"]::-moz-range-track {  
+    background-color: var(--BlueDarker);
+    /* height: 100%; */
+    height: 20px;
+    border-radius: 10px;
+    /* padding: 1rem; */
+  }
